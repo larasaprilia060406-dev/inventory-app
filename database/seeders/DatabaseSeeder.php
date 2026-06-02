@@ -22,6 +22,9 @@ class DatabaseSeeder extends Seeder
             'email' => 'test@example.com',
         ]);
 
+        // Seeder user admin & user
+        $this->call(UserSeeder::class);
+
         $this->call(CategorySeeder::class);
         // Tambahkan 50 produk acuan
         \App\Models\Product::factory(50)->create();

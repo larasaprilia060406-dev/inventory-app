@@ -8,6 +8,10 @@
         Inventory App
     </h1>
 
+    <h2>Selamat Datang {{ Auth::user()->name }}</h2>
+
+    <p>Role: {{ Auth::user()->role }}</p>
+
     <p class="lead">
         Selamat datang pada aplikasi inventaris sederhana Laravel.
     </p>
